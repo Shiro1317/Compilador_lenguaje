@@ -1,0 +1,6 @@
+clase main{
+	edad=20;
+
+print(edad);
+
+}

@@ -1,0 +1,25 @@
+libreria principal 
+
+clase main(){
+
+    
+    float estatura=1.75;
+    float peso=72.5;
+	estatura = 1.75;
+	peso = 72.5;
+    float imc;
+
+    imc = peso / (estatura * estatura);
+
+    if ( (imc >= 18.5) && (imc <= 24.9) ){
+        print("Estás en un peso saludable");
+    } else if( (imc >= 25) && (imc <= 29.9) ){
+        print("Tienes sobrepeso");
+    } else if( imc > 29.9 ){
+        print("Eres una persona obesa");
+    } else {
+        print("Eres una persona con desnutrición");
+    }
+
+    print("Fin del programa");   
+}

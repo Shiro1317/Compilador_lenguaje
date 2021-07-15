@@ -1,0 +1,61 @@
+#btn{
+    -fx-background-color: linear-gradient(to bottom, #cb997e, #b7b7a4);
+    -fx-background-radius: 10% 10%;
+}
+#btn:hover{
+    -fx-background-color: linear-gradient(to bottom, #cb997e , #b7b7a4 )
+
+}
+
+#btn:pressed {
+    -fx-background-color: linear-gradient(to bottom, #b7b7a4, #cb997e);
+}
+.menu-bar, .context-menu{
+    -fx-background-color: linear-gradient(to bottom,#FFCBF2 ,#C0FDFF) ;
+}
+.menu{
+    -fx-background-color: linear-gradient(to bottom,#FFCBF2 ,#C0FDFF) ;
+}
+
+.menu:hover{
+    -fx-background-color: linear-gradient(to bottom,#85FBFF ,#FF85E0);
+    -fx-border-radius: 5%;
+    -fx-background-radius: 5% ;
+}
+.menu:showing{
+    -fx-background-color: #C8E7FF;
+}
+.menu-item:focused {
+    -fx-background-color: linear-gradient(to bottom,#FFCBF2 ,#C0FDFF) ;
+}
+.menu .label{
+    -fx-text-fill: #000;
+}
+.menu-item:hover{
+    -fx-background-color: #FF85E0;
+}
+
+
+#limpiar{
+    -fx-graphic: url("dinosaurio.png");
+}
+#correr{
+    -fx-graphic: url("maquina-de-arcade.png");
+}
+#traducir{
+    -fx-graphic: url("buscapersonas.png");
+}
+#traducirC{
+    -fx-graphic: url("computadora.png");
+}
+#header{
+    -fx-background-color: linear-gradient(to top,#FFCBF2 ,#C0FDFF) ;
+
+
+}
+#area_input{
+    -fx-control-inner-background: #ffcbf2;
+    -fx-border-width: 5px;
+    -fx-border-style: solid;
+    -fx-border-color: #FCFF5C;
+}

@@ -1,0 +1,93 @@
+libreria principal 
+
+clase main(){
+    /**
+     * En este programa se analizará que las variables tengan
+     * el alcance para el cual están diseñadas
+     **/
+    
+    float estatura = 1.75;
+    float peso = 71.0;
+
+    float imc;
+
+    imc = peso / (estatura * estatura);
+
+    if ( (imc >= 18.5) && (imc <= 24.9) ){
+        int salir;
+        salir = 0;
+        while(salir != 4){            
+            print("Estas en un peso saludable");
+            salir = salir + 1;
+            if(salir != 4 ){
+                print("sigue alimentandote bien");
+            }
+        }
+    } else if( (imc >= 25) && (imc <= 29.9) ){
+        print("Tienes sobrepeso");
+    } else if( imc > 29.9 ){
+        print("Eres una persona obesa");
+    } else {
+        print("Eres una persona con desnutricion");
+    }
+
+    /**
+     * Cálculo para determinar la cantidad de calorías deberá consumir una persona
+     * que está con su IMC saludable 
+     **/
+    if ( (imc >= 18.5) && (imc <= 24.9) ) {
+        /** 
+         * seleccionar género de la persona
+         *  0 = male, 1 = femmale
+         * **/
+        int gender = 1;
+
+        /**
+         * Se necesitarán los datos como: 
+         * edad (años), 
+         * peso (kg),
+         * altura (m)
+         * **/
+        float edad = 39.0;
+        //float peso = 71.0;
+        //float estatura = 1.75;
+
+        /**
+         * Se necesita conocer el nivel de actividad de la persona (AF)
+         *  AF = 1 (sedentario)
+            AF = 1,12 (poco activo)
+            AF = 1,27 (activo)
+            AF = 1,45 (muy activo)
+         * **/
+        float AF = 1.27;
+        
+        /**
+         * Necesidades energéticas NEE
+         * **/
+        float NEE;
+        if ( gender == 1 ){
+            /**
+             * Cálculo cuando es género femenino
+             * **/
+            NEE = 354.0 - 6.91 * edad + AF * (9.36 * peso + 726 * altura);
+        } else {
+            /**
+             * Cálculo cuando es género femenino
+             * **/
+            NEE = 662 - 9.53 * edad + AF * ( 15.91 * peso + 539.6 * altura);
+        }
+
+        print("La cantidad de calorias que deberás consumir son:");
+        print(NEE);
+    }
+
+
+
+    
+
+    print(salir);
+    print("Fin del programa");
+
+
+     
+}

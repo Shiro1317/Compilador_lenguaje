@@ -1,0 +1,17 @@
+clase main{
+    int edad;
+
+    edad = 20;
+    if ( edad >= 21){
+        printf("Eres una persona mayor de edad");
+    } else if ( edad > 15 && edad < 21) {
+        printf("Estás empezando a vivir y todavía no puedes votar");
+    }
+    else{
+        printf("Eres infante");
+    }
+ 
+    printf("fin");
+    printf(2021);
+ 
+}

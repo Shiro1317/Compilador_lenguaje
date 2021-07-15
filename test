@@ -1,0 +1,7 @@
+clase main{
+    int edad;
+	edad=20;
+
+print(edad);
+
+}

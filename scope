@@ -1,0 +1,19 @@
+
+clase main(){
+    int a = true;
+    int b = true;
+    print(a);
+    print(b);
+    if(a && b){
+        int c;
+        c = false;
+        print("amor");
+        print(c);
+        if(a && b) {
+            int d = true;
+            print("ola");
+            print(c);
+            print("ultimo si");
+        }
+    }
+}

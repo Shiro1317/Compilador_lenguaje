@@ -1,0 +1,11 @@
+clase miClase(){
+	int numero;
+	int otronumero;
+	int resultado;
+	numero = 1;
+	otronumero = 5;
+	resultado = numero + otronumero;
+	print(numero);
+	print(otronumero);
+	print(resultado);
+}

@@ -1,0 +1,15 @@
+
+clase main(){
+    int a = true;
+    int b = true;
+    print(0);
+    if(a && b){
+        int c;
+        c = false;
+        print(1);
+        if(a && b) {
+            int d = true;
+            print(2);
+        }
+    }
+}
